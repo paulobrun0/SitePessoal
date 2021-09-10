@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-:root{
+:root {
   --purple: #5280E2;
   --green: #15CDBD;
   --bg-dark: #212226;
   --light-grey: #E0DEDE;
-
   --menu-hight: 75px;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
 
@@ -49,6 +48,15 @@ button {
   font-size: 1.125em;
 }
 
+.title-purple {
+  color: var(--purple);
+}
+
+.title-green {
+  color: var(--green);
+}
+
+
 header {
   height: calc(100vh - var(--menu-hight));
   display: flex;
@@ -61,12 +69,8 @@ header .container {
   padding: 0 100px;
 }
 
-  header .container img {
-    display: none;
-  }
-
-header .container h1 {
-  color:var(--green)
+header .container img {
+  display: none;
 }
 
 header .container button {
@@ -93,68 +97,86 @@ nav ul {
   width: 100%;
   justify-content: space-around;
 }
-nav ul a{
+
+nav ul a {
   text-decoration: none;
   font-size: 1.5em;
   color: var(--green);
 }
 
-nav ul a svg{
+nav ul a svg {
   display: none;
 }
 
-/* Responsividade */ 
+.about-me {
+  display: flex;
+  padding: 100px;
+}
+
+.about-me .container {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.about-me .img-container {
+  width: 50%;
+  text-align: center;
+}
+
+.about-me .img-container img {
+  width: 70%;
+}
+
+/* Responsividade */
 
 @media (max-width:1000px) {
   header .container {
     width: 100%;
   }
-
   nav ul a {
     font-size: 1.125em;
   }
-
   nav {
     padding: 0 40px;
   }
 }
 
-/* Tablet */ 
-@media (max-width: 767px) {
+/* Tablet */
 
+@media (max-width: 767px) {
   header .container img {
     display: inline;
     margin-bottom: 40px;
   }
-
   nav img {
     display: none;
   }
-
   nav ul {
     padding: 0;
   }
-
   nav ul a {
     font-size: 1em;
   }
 }
 
-/* Celular */ 
+/* Celular */
+
 @media (max-width: 480px) {
-  header .container  {
+  header .container {
     padding: 0 40px;
   }
-
   nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    top: unset;
     padding: 0 15px;
     margin-top: 10px;
   }
-
   nav ul a {
     font-size: 0.75em;
   }
-  nav ul a svg{
+  nav ul a svg {
     display: block;
     margin: 0 auto 10px;
   }
