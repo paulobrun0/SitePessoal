@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulo Bruno</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
+            <img src="assets/img/logo.svg" alt="logo">
             <h2>Hello,</h2>
             <h1>I am Paulo Bruno</h1>
             <p>Sou desenvolvedor Frontend, com 3 meses de expêriencia. Já trabalhei com Html, Css, Bootstrap, git em
@@ -24,14 +26,18 @@
         <nav>
             <img src="assets/img/logo.svg" alt="logo">
             <ul>
-                <a href="">Sobre mim</a>
-                <a href="">Serviços</a>
-                <a href="">Portifolio</a>
-                <a href="">Curriculo</a>
-                <a href="">Contato</a>
+                <a href=""><i data-feather="user"></i>Sobre mim</a>
+                <a href=""><i data-feather="briefcase"></i>Serviços</a>
+                <a href=""><i data-feather="image"></i>Portifolio</a>
+                <a href=""><i data-feather="list"></i>Curriculo</a>
+                <a href=""><i data-feather="send"></i>Contato</a>
+                
             </ul>
         </nav>
     </section>
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>
