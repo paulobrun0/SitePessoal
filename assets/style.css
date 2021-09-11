@@ -121,10 +121,28 @@ nav ul a svg {
 .about-me .img-container {
   width: 50%;
   text-align: center;
+  position: relative;
 }
 
 .about-me .img-container img {
   width: 70%;
+  height: 100%;
+}
+
+.about-me .img-container .line{
+  width: calc(70% + 50px);
+  height: calc(100% + 50px);
+  border: 1px solid var(--purple);
+
+
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 70%/2 - 25px);
+}
+
+.about-me .img-container .line.green{
+  transform: rotate(-3.3deg);
+  color: var(--green);
 }
 
 /* Responsividade */
@@ -157,6 +175,18 @@ nav ul a svg {
   nav ul a {
     font-size: 1em;
   }
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+  }
+  .about-me .container {
+    width: fit-content;
+  }
+  .about-me .img-container img{
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* Celular */
@@ -180,4 +210,5 @@ nav ul a svg {
     display: block;
     margin: 0 auto 10px;
   }
+  
 }
