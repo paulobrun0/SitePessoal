@@ -414,5 +414,7 @@ nav ul a svg {
 
   .curriculum .container .content-curriculum .curriculum-info {
     padding: 0 15px;
+    font-size: 13px;
+    font-weight: bold
   }
 }
