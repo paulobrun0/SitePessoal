@@ -4,30 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paulo Bruno</title>
+    <title>Paulo Bruno Portfolio</title>
     <link rel="stylesheet" href="assets/style.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
-
   <body>
-    <header>
-      <div class="container">
-        <img src="assets/img/logo.svg" alt="logo" />
-        <h2>Hello,</h2>
-        <h1 class="title-green">I am Paulo Bruno</h1>
-        <p>
-          Desenvolvedor Frontend, com 1 anos de expêriencia. Já trabalhei com
-          HTML, CSS, Bootstrap, GIT, JS, REACTJS.
-        </p>
-        <button
-          onclick="window.open('https://api.whatsapp.com/send?1=pt_br&phone=5582999998765')"
-        >
-          Entre em Contato
-        </button>
-      </div>
-    </header>
     <nav>
-      <img src="assets/img/logo.svg" alt="logo" />
+      <a href="index.html"><img src="assets/img/logo.svg" alt="logo" /></a>
       <ul>
         <a href="#about-me"><i data-feather="user"></i>Sobre mim</a>
         <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
@@ -37,45 +20,6 @@
       </ul>
     </nav>
 
-    <section id="about-me" class="about-me">
-      <div class="container">
-        <h1 class="title-green">Sobre mim</h1>
-        <p>
-          Expêriencia como desenvolvedor Frontend durante 1 anos, sou formado em
-          Analise e Desenvolvimento de Sistemas pela Unicesumar.
-          <br /><br />
-          Sou muito criativo, gosto muito de estudar coisas novas e estou sempre
-          pronto para um novo desafio.
-        </p>
-      </div>
-      <div class="img-container">
-        <div class="line green"></div>
-        <div class="line purple"></div>
-        <img src="assets/img/MinhaFoto.png" alt="Paulo Bruno" />
-      </div>
-    </section>
-
-    <section id="services" class="services">
-      <h1 class="title-purple">Serviços</h1>
-      <div class="services-container">
-        <div class="service-card">
-          <img src="assets/img/developer.svg" alt="Icone desenvolvimento" />
-          <h2>Desenvolvimento de Sites</h2>
-          <p>
-            Desenvolvimento de sites empresariais. Faça sua empresa ser
-            encotrada online
-          </p>
-        </div>
-        <div class="service-card">
-          <img src="assets/img/code-solid.svg" alt="Icone Coder" />
-          <h2>Desenvolvimento de Aplicações Web</h2>
-          <p>
-            Desenvolvimento de aplicações web, como sistemas de gerenciamento
-            sob medida.
-          </p>
-        </div>
-      </div>
-    </section>
     <section id="portfolio" class="portfolio">
       <h1 class="title-green">Porfólio</h1>
       <div class="portfolio-container">
@@ -174,62 +118,35 @@
             >
           </button>
         </div>
-      </div>
-    </section>
-
-    <section id="curriculum" class="curriculum">
-      <h1 class="title-green">Currículo</h1>
-      <div class="container">
-        <img class="curriculum-img" src="assets/img/curriculo.png" alt="" />
-        <div class="content">
-          <div class="curriculum-info">
-            <span>Nome</span><b>Paulo Bruno</b> <span>Idade</span
-            ><b>25 anos</b> <span>Formação</span
-            ><b>Analise e Desenvolvimento de Software</b> <span>Cidade</span
-            ><b>Arapiraca</b> <span>Telefone</span><b>(82) - 99999-8765</b>
-            <span>Email</span><b>paulo.bruno04@hotmail.com</b>
-            <span>Freelance</span><b>Disponível</b> <span>Ex</span
-            ><b>HTML, CSS, GIT, BOOTSTRAP, JAVASCRIPT, REACT</b>
-            <span>Idiomas</span><b>Inglês (Básico)</b>
+        <div class="portfolio-card">
+          <div class="img-container">
+            <div class="line-green"></div>
+            <img src="assets/img/workit.png" alt="imagem-linktree" />
           </div>
-          <button class="secondary-button">
-            <img src="assets/img/save.svg" alt="" />
-            Baixe meu currículo completo
+          <div class="language-container">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <p>
+            <b>
+              <a href="https://paulobrun0.github.io/workit/" target="_blank">
+                Rocket.sect</a
+              ></b
+            >
+          </p>
+          <p>
+            Projeto feito usando html, css e js com o objetivo de ser um
+            agrupador de links para o instagram.
+          </p>
+          <button>
+            <a href="https://paulobrun0.github.io/workit/" target="_blank"
+              >Acessar Projeto</a
+            >
           </button>
         </div>
       </div>
     </section>
-
-    <section id="contact" class="contact">
-      <h1>Vamos trabalhar juntos?</h1>
-      <p>
-        Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou
-        faça parte do seu time, entre em contato comigo!
-      </p>
-      <button
-        onclick="window.open('https://api.whatsapp.com/send?1=pt_br&phone=5582999998765')"
-      >
-        Entre em contato
-      </button>
-
-      <div class="social-media">
-        <a href="#"
-          ><img src="assets/img/instagram.png" alt="instagram logo"
-        /></a>
-        <a href="#"
-          ><img src="assets/img/linkedin.png" alt="linkedin logo"
-        /></a>
-        <a href="https://api.whatsapp.com/send?1=pt_br&phone=5582999998765"
-          ><img src="assets/img/whatsapp.png" alt="whatsapp logo"
-        /></a>
-      </div>
-    </section>
-
-    <footer>
-      <p>Made by Paulo Bruno - 2023</p>
-    </footer>
-    <script>
-      feather.replace()
-    </script>
   </body>
 </html>
