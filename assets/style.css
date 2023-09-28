@@ -182,6 +182,11 @@ nav ul a svg {
   padding: 0 100px;
 }
 
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .services-container,
 .portfolio-container {
   display: flex;
