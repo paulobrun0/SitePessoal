@@ -185,7 +185,6 @@ nav ul a svg {
 .services-container,
 .portfolio-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
   max-width: 1200px;
